@@ -18,25 +18,28 @@
     --body-font-color: #515151;
 }
 
-/* Fondo para el mensaje especial */
+/* Fondo negro que cubre toda la pantalla */
 .fondo_negro {
     position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: rgba(0, 0, 0, 0.9); /* Negro con leve transparencia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilo del mensaje */
+/* Mensaje dentro del fondo negro */
 .mensaje_kerly {
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8);
-    font-family: var(--body-font);
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Leve fondo difuminado */
 }
