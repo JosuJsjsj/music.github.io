@@ -1,18 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
-/*Global styles*/
+
+/* Global styles */
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --main-font: 'Source Sans Pro', sans-serif;
     --secondary-font: 'Herr Von Muellerhoff', cursive;
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
     --body-font-color: #515151;
+}
+
+/* Fondo para el mensaje especial */
+.fondo_negro {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
+}
+
+/* Estilo del mensaje */
+.mensaje_kerly {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.8);
+    font-family: var(--body-font);
 }
